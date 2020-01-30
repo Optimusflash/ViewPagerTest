@@ -1,54 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".ui.fragments.ApiLevelFragment">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
-        <TextView
-            android:id="@+id/tv_api_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:fontFamily="sans-serif-medium"
-            android:textColor="@android:color/black"
-            android:textSize="32dp"
-            tools:text="Oreo" />
-
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:gravity="center"
+            android:orientation="vertical">
+
             <TextView
-                android:id="@+id/tv_api_version"
+                android:id="@+id/tv_api_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
+                android:fontFamily="sans-serif-medium"
                 android:textColor="@android:color/black"
-                android:textSize="16dp"
-                tools:text="8.0" />
-            <TextView
-                android:id="@+id/tv_api_year"
+                android:textSize="32sp"
+                tools:text="Oreo" />
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:layout_marginLeft="8dp"
-                android:textColor="@android:color/black"
-                android:textSize="16dp"
-                tools:text="2017" />
-        </LinearLayout>
+                android:orientation="horizontal">
 
-    </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="Версия:" />
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_api_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="4dp"
+                    android:textSize="16sp"
+                    tools:text="8.0" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="16dp"
+                    android:textSize="16sp"
+                    android:text="Год:" />
+
+                <TextView
+                    android:id="@+id/tv_api_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    tools:text="2017" />
+            </LinearLayout>
+
         <TextView
             android:id="@+id/tv_api_description"
             android:layout_width="match_parent"
@@ -56,11 +70,11 @@
             android:fontFamily="sans-serif"
             android:padding="8dp"
             android:textColor="@android:color/black"
-            android:textSize="16dp"
+            android:textSize="16sp"
             tools:text="@string/oreo_description" />
 
-    </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
 
 
-
-</LinearLayout>
