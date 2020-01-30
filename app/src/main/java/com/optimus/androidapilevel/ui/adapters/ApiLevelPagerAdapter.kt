@@ -3,7 +3,6 @@ package com.optimus.androidapilevel.ui.adapters
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import androidx.fragment.app.FragmentStatePagerAdapter
 import com.optimus.androidapilevel.ui.fragments.ApiLevelFragment
 import com.optimus.androidapilevel.utils.DataGenerator
 

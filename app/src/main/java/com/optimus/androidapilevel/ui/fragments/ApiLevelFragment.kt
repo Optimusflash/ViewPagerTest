@@ -17,12 +17,12 @@ import kotlinx.android.synthetic.main.fragment_api_level.*
 class ApiLevelFragment : Fragment() {
 
     companion object{
-        private const val TAG = " TAG"
+        private const val EXTRA_ID = "EXTRA_ID"
 
         fun newInstance(id: Int): ApiLevelFragment{
             val fragment = ApiLevelFragment()
             fragment.arguments = Bundle().apply {
-                putInt(TAG, id)
+                putInt(EXTRA_ID, id)
             }
             return fragment
         }
@@ -38,7 +38,7 @@ class ApiLevelFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val apiLevelId = arguments?.getInt(TAG)
+        val apiLevelId = arguments?.getInt(EXTRA_ID)
 
         apiLevelId?.let {
             DataGenerator.getApiLevelById(it)?.let {apiLevel ->
