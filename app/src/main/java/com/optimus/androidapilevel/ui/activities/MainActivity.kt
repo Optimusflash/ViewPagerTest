@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        setSupportActionBar(toolbar)
         val apiLevelPagerAdapter = ApiLevelPagerAdapter(supportFragmentManager)
         view_pager.adapter = apiLevelPagerAdapter
         tab_layout.setupWithViewPager(view_pager)
