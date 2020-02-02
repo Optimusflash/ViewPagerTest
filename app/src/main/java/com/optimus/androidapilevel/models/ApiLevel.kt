@@ -7,9 +7,10 @@ import java.time.Year
  */
 data class ApiLevel(
     val id: Int,
-    val version: Float,
+    val level: String,
+    val version: String,
     val name: String,
-    val year: Int,
+    val year: String,
     val description: Int
 ) {
 }

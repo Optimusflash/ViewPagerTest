@@ -21,12 +21,33 @@
                 android:textSize="32sp"
                 tools:text="Oreo" />
 
-            <View
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
-                android:background="@drawable/divider"/>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="4dp"
+                    android:textSize="16sp"
+                    android:text="API level:" />
+
+                <TextView
+                    android:id="@+id/tv_api_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    tools:text="26" />
+            </LinearLayout>
+
+
+
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -69,6 +90,12 @@
                     android:textSize="16sp"
                     tools:text="2017" />
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/divider"/>
 
         <TextView
             android:id="@+id/tv_api_description"

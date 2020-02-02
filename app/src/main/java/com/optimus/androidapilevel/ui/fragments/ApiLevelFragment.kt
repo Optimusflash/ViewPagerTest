@@ -43,8 +43,9 @@ class ApiLevelFragment : Fragment() {
         apiLevelId?.let {
             DataGenerator.getApiLevelById(it)?.let {apiLevel ->
                 tv_api_title.text = apiLevel.name
-                tv_api_version.text = apiLevel.version.toString()
-                tv_api_year.text = apiLevel.year.toString()
+                tv_api_level.text = apiLevel.level
+                tv_api_version.text = apiLevel.version
+                tv_api_year.text = apiLevel.year
                 tv_api_description.text = view.resources.getString(apiLevel.description)
             }
         }
