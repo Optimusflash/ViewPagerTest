@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.fragment_api_level.*
 /**
  * A simple [Fragment] subclass.
  */
-class ApiLevelFragment : Fragment() {
+class ApiLevelFragment : Fragment(R.layout.fragment_api_level) {
 
     companion object{
         private const val EXTRA_ID = "EXTRA_ID"
@@ -28,13 +28,6 @@ class ApiLevelFragment : Fragment() {
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-
-        return inflater.inflate(R.layout.fragment_api_level, container, false)
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

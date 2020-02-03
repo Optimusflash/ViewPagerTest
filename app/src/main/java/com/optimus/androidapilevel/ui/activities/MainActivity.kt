@@ -8,6 +8,7 @@ import android.widget.Toast
 import com.optimus.androidapilevel.R
 
 import com.optimus.androidapilevel.ui.adapters.ApiLevelPagerAdapter
+import com.optimus.androidapilevel.ui.fragments.ArticleDialogFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -30,11 +31,16 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when(item.itemId){
             R.id.settings -> {
-                Toast.makeText(this, "Some settings...", Toast.LENGTH_SHORT).show()
+                showDialog()
                 true
             }
             else -> super.onOptionsItemSelected(item)
         }
 
+    }
+
+    private fun showDialog() {
+        val articleDialogFragment = ArticleDialogFragment()
+        articleDialogFragment.show(supportFragmentManager, ArticleDialogFragment.TAG)
     }
 }

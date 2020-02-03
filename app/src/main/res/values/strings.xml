@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">AndroidApiLevel</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="gingerbread_description">
 • Обновлённый дизайн пользовательского интерфейса.\n
 • Поддержка сверхвысоких размеров экранов и разрешений (WXGA и выше).\n
@@ -178,4 +177,8 @@
 • Встроенный MIDI API, позволяющий взаимодействовать с музыкальными контроллерами.\n
 • Улучшенная поддержка биометрической аутентификации в приложениях.\n
     </string>
+
+
+    <string name="dialog_wikipedia_info">Желаеете узнать больше про android API level? </string>
+    <string name="dialog_wikipedia_description">При нажатии на кнопку \"Да\" Вы будете перенаправлены на сайт ru.wikipedia.org </string>
 </resources>
